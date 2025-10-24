@@ -147,29 +147,9 @@
 #     for c in range(3):
 #         if lst[r][c] % 2 != 0:
 #             print("#")
-# A:
-except (TypeError, ValueError, ZeroDivisionError):
-    # Some code.
 
-# B:
-except TypeError, ValueError, ZeroDivisionError:
-    # Some code.
-
-# C:
-except: (TypeError, ValueError, ZeroDivisionError)
-    # Some code.
-
-# D:
-except: TypeError, ValueError, ZeroDivisionError
-    # Some code.
-
-# E:
-except (TypeError, ValueError, ZeroDivisionError)
-    # Some code.
-
-# F:
-except TypeError, ValueError, ZeroDivisionError
-    # Some code.
+foo = (1, 2, 3)
+foo.index(0)
 
 
-
+print(foo)
