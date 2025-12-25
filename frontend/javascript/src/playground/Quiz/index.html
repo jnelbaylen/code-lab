@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <form id="form">
+        <h2>Quiz</h2>
+        <p>What city is located on two continents?</p> <br>
+        <textarea id="textarea"></textarea><br />
+        <button id="button" disabled>Submit</button> <br>
+
+        <p id="loading" class="loading" style="display: none">Loading...</p> <br>
+        <p id="error"  class="error" style="display: none; color: red;"></p>
+    </form>
+
+    <h1 id="success" class="success" style="display: none">That's right!</h1>
+
+    <script src="script.js"></script>
+</body>
+</html>
