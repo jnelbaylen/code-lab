@@ -1,12 +1,12 @@
-import Navbar from '@components/Navbar';
+import { Fragment } from 'react';
 
+import { Navbar } from '@components/Navbar';
 
-export default function Root(){
+export function Root(){
     return(
-        <>
+        <Fragment>
             <Navbar/>    
-
-        </>
+        </Fragment>
     );
 }
 

@@ -1,9 +1,14 @@
+import '@styles/global.css'
+
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import '@styles/global.css'
-import Root from '@pages/Root.tsx'
 
-createRoot(document.getElementById('root')!).render(
+import { Root } from '@pages/Root.tsx'
+
+const rootElement = document.getElementById('root')
+const rootNode = createRoot(rootElement as HTMLDivElement)
+
+rootNode.render(
   <StrictMode>
     <Root />
   </StrictMode>,
