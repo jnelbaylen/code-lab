@@ -2,15 +2,15 @@ import { useState, useEffect } from "react"
 import { Menu, X, Home, User, Briefcase, Mail } from "lucide-react"
 
 export default function Navbar() {
-  const [isOpen, setIsOpen] = useState(false)
-  const [scrolled, setScrolled] = useState(false)
+  const [ isOpen, setIsOpen ] = useState(false)
+  const [ scrolled, setScrolled ] = useState(false)
 
   useEffect(() => {
-    const handleScroll = () => {
+    const onHandleScroll = () => {
       setScrolled(window.scrollY > 20)
     }
-    window.addEventListener("scroll", handleScroll)
-    return () => window.removeEventListener("scroll", handleScroll)
+    window.addEventListener("scroll", onHandleScroll)
+    return () => window.removeEventListener("scroll", onHandleScroll)
   }, [])
 
   const navItems = [
