@@ -1,11 +1,11 @@
 import { Fragment } from 'react';
 
-import { Navbar } from '@components/Navbar';
+import { RefSummary } from '@hooks/ref/RefSummary';
 
 export function Root(){
     return(
         <Fragment>
-            <Navbar/>    
+            <RefSummary />
         </Fragment>
     );
 }
