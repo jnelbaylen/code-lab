@@ -13,9 +13,9 @@ export const RefCounter = () => {
         <div>
             <button 
                 onClick={ onHandleClick } 
-                className="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 my-10 mx-10 rounded"
+                className="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 my-10 mx-13 rounded"
             >
-                Click me
+                Open DevTools
             </button>
         </div>
     )

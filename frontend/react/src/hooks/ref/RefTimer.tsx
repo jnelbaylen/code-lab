@@ -34,7 +34,10 @@ export const RefTimer = () => {
 
     return(
         <div>
-           <h1 className="ml-20">Time passed : { secondsPassed.toFixed(3) }</h1>
+           <h1 className="ml-5 font-bold text-2xl">
+                Time passed : 
+                <span className="font-light"> { secondsPassed.toFixed(3) }</span>
+            </h1>
            <button 
                 onClick={ onHandleStart }
                 className="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 my-10 mx-10 rounded"
