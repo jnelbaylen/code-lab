@@ -30,3 +30,8 @@ const fullName = "John Doe"
 
 console.log(color)
 console.log(fullName)
+console.log("")
+
+let canLeave: any = true
+canLeave = "string"
+Math.round(canLeave)
