@@ -14,8 +14,8 @@ const sentence: string = `
 
 console.log(sentence)
 
-function greet(fullName: string): string {
+function showName(fullName: string): string {
     return `Hello, ${ fullName }`   
 }
 
-console.log(greet("John Doe"))
+console.log(showName("John Doe"))
