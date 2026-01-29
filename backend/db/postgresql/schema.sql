@@ -51,3 +51,10 @@ SELECT * FROM cars
 LIMIT 11;
 
 -- SELECT * FROM product CROSS JOIN cars;
+
+DELETE FROM cars WHERE brand = 'Toyota'
+
+ALTER TABLE cars  
+ADD COLUMN IF NOT EXISTS color VARCHAR(255);
+
+UPDATE cars SET color = 'red';
